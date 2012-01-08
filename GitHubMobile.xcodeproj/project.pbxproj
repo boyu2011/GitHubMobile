@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4106F56414B57995005BCD3F /* FollowingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4106F56314B57995005BCD3F /* FollowingListViewController.m */; };
+		4106F56714B57FB1005BCD3F /* FollowersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4106F56614B57FB1005BCD3F /* FollowersListViewController.m */; };
+		413B970814B2D3F4005CFEAA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413B970714B2D3F4005CFEAA /* LoginViewController.m */; };
+		413B972F14B56173005CFEAA /* UserSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413B972E14B56173005CFEAA /* UserSummaryViewController.m */; };
+		41628CE314B253DA00869F05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41628CE214B253DA00869F05 /* UIKit.framework */; };
+		41628CE514B253DA00869F05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41628CE414B253DA00869F05 /* Foundation.framework */; };
+		41628CE714B253DA00869F05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41628CE614B253DA00869F05 /* CoreGraphics.framework */; };
+		41628CED14B253DA00869F05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41628CEB14B253DA00869F05 /* InfoPlist.strings */; };
+		41628CEF14B253DA00869F05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628CEE14B253DA00869F05 /* main.m */; };
+		41628CF314B253DA00869F05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628CF214B253DA00869F05 /* AppDelegate.m */; };
+		41628CF614B253DA00869F05 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41628CF414B253DA00869F05 /* MainStoryboard.storyboard */; };
+		41628D0114B2551100869F05 /* RepoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D0014B2551100869F05 /* RepoListViewController.m */; };
+		41628D1914B2570200869F05 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D1214B2570200869F05 /* NSData+Base64.m */; };
+		41628D1A14B2570200869F05 /* NSString+UAGithubEngineUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D1414B2570200869F05 /* NSString+UAGithubEngineUtilities.m */; };
+		41628D1B14B2570200869F05 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D1614B2570200869F05 /* NSString+UUID.m */; };
+		41628D1C14B2570200869F05 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D1814B2570200869F05 /* NSArray+Utilities.m */; };
+		41628D2B14B2572400869F05 /* UAGithubJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D1E14B2572400869F05 /* UAGithubJSONParser.m */; };
+		41628D2C14B2572400869F05 /* UAGithubSimpleJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2014B2572400869F05 /* UAGithubSimpleJSONParser.m */; };
+		41628D2D14B2572400869F05 /* UAGithubUsersJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2214B2572400869F05 /* UAGithubUsersJSONParser.m */; };
+		41628D2E14B2572400869F05 /* UAGithubRepositoriesJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2414B2572400869F05 /* UAGithubRepositoriesJSONParser.m */; };
+		41628D2F14B2572400869F05 /* UAGithubCommitsJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2614B2572400869F05 /* UAGithubCommitsJSONParser.m */; };
+		41628D3014B2572400869F05 /* UAGithubIssuesJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2814B2572400869F05 /* UAGithubIssuesJSONParser.m */; };
+		41628D3114B2572400869F05 /* UAGithubIssueCommentsJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D2A14B2572400869F05 /* UAGithubIssueCommentsJSONParser.m */; };
+		41628D3514B2574D00869F05 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D3414B2574D00869F05 /* CDataScanner.m */; };
+		41628D4014B2578300869F05 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D3914B2578300869F05 /* CDataScanner_Extensions.m */; };
+		41628D4114B2578300869F05 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D3B14B2578300869F05 /* NSCharacterSet_Extensions.m */; };
+		41628D4214B2578300869F05 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D3D14B2578300869F05 /* NSDictionary_JSONExtensions.m */; };
+		41628D4314B2578300869F05 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D3F14B2578300869F05 /* NSScanner_Extensions.m */; };
+		41628D4E14B2579700869F05 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D4514B2579700869F05 /* CJSONDataSerializer.m */; };
+		41628D4F14B2579700869F05 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D4714B2579700869F05 /* CJSONDeserializer.m */; };
+		41628D5014B2579700869F05 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D4914B2579700869F05 /* CJSONScanner.m */; };
+		41628D5114B2579700869F05 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D4B14B2579700869F05 /* CJSONSerializer.m */; };
+		41628D5214B2579700869F05 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D4D14B2579700869F05 /* CSerializedJSONData.m */; };
+		41628D6014B257DF00869F05 /* UAGithubEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D5514B257DF00869F05 /* UAGithubEngine.m */; };
+		41628D6114B257DF00869F05 /* UAReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D5714B257DF00869F05 /* UAReachability.m */; };
+		41628D6214B257DF00869F05 /* UAGithubURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D5B14B257DF00869F05 /* UAGithubURLConnection.m */; };
+		41628D6314B257DF00869F05 /* UAGithubEngineConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D5D14B257DF00869F05 /* UAGithubEngineConstants.m */; };
+		41628D6414B257DF00869F05 /* UAGithubOrganizationsJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 41628D5F14B257DF00869F05 /* UAGithubOrganizationsJSONParser.m */; };
+		41891A5814B289BA00F6FFDF /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41891A5714B289BA00F6FFDF /* ProfileViewController.m */; };
+		41CAF24214B8BDC7002DB9AA /* BranchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CAF24114B8BDC7002DB9AA /* BranchListViewController.m */; };
+		41CAF24514B91631002DB9AA /* CommitListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CAF24414B91631002DB9AA /* CommitListViewController.m */; };
+		41CAF24B14BA1FEF002DB9AA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CAF24A14BA1FEF002DB9AA /* SystemConfiguration.framework */; };
+		41CAF25214BA3A1C002DB9AA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41CAF24C14BA3506002DB9AA /* Default.png */; };
+		41CAF25514BA3EB7002DB9AA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41CAF25414BA3EB7002DB9AA /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4106F56214B57995005BCD3F /* FollowingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingListViewController.h; sourceTree = "<group>"; };
+		4106F56314B57995005BCD3F /* FollowingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingListViewController.m; sourceTree = "<group>"; };
+		4106F56514B57FB1005BCD3F /* FollowersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowersListViewController.h; sourceTree = "<group>"; };
+		4106F56614B57FB1005BCD3F /* FollowersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowersListViewController.m; sourceTree = "<group>"; };
+		413B970614B2D3F4005CFEAA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		413B970714B2D3F4005CFEAA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		413B972D14B56172005CFEAA /* UserSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSummaryViewController.h; sourceTree = "<group>"; };
+		413B972E14B56173005CFEAA /* UserSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSummaryViewController.m; sourceTree = "<group>"; };
+		41628CDE14B253DA00869F05 /* GitHubMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41628CE214B253DA00869F05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		41628CE414B253DA00869F05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		41628CE614B253DA00869F05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		41628CEA14B253DA00869F05 /* GitHubMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitHubMobile-Info.plist"; sourceTree = "<group>"; };
+		41628CEC14B253DA00869F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		41628CEE14B253DA00869F05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41628CF014B253DA00869F05 /* GitHubMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHubMobile-Prefix.pch"; sourceTree = "<group>"; };
+		41628CF114B253DA00869F05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41628CF214B253DA00869F05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41628CF514B253DA00869F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		41628CFF14B2551100869F05 /* RepoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepoListViewController.h; sourceTree = "<group>"; };
+		41628D0014B2551100869F05 /* RepoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepoListViewController.m; sourceTree = "<group>"; };
+		41628D1114B2570200869F05 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		41628D1214B2570200869F05 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		41628D1314B2570200869F05 /* NSString+UAGithubEngineUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UAGithubEngineUtilities.h"; sourceTree = "<group>"; };
+		41628D1414B2570200869F05 /* NSString+UAGithubEngineUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UAGithubEngineUtilities.m"; sourceTree = "<group>"; };
+		41628D1514B2570200869F05 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		41628D1614B2570200869F05 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		41628D1714B2570200869F05 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
+		41628D1814B2570200869F05 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
+		41628D1D14B2572400869F05 /* UAGithubJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubJSONParser.h; sourceTree = "<group>"; };
+		41628D1E14B2572400869F05 /* UAGithubJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubJSONParser.m; sourceTree = "<group>"; };
+		41628D1F14B2572400869F05 /* UAGithubSimpleJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubSimpleJSONParser.h; sourceTree = "<group>"; };
+		41628D2014B2572400869F05 /* UAGithubSimpleJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubSimpleJSONParser.m; sourceTree = "<group>"; };
+		41628D2114B2572400869F05 /* UAGithubUsersJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubUsersJSONParser.h; sourceTree = "<group>"; };
+		41628D2214B2572400869F05 /* UAGithubUsersJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubUsersJSONParser.m; sourceTree = "<group>"; };
+		41628D2314B2572400869F05 /* UAGithubRepositoriesJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubRepositoriesJSONParser.h; sourceTree = "<group>"; };
+		41628D2414B2572400869F05 /* UAGithubRepositoriesJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubRepositoriesJSONParser.m; sourceTree = "<group>"; };
+		41628D2514B2572400869F05 /* UAGithubCommitsJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubCommitsJSONParser.h; sourceTree = "<group>"; };
+		41628D2614B2572400869F05 /* UAGithubCommitsJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubCommitsJSONParser.m; sourceTree = "<group>"; };
+		41628D2714B2572400869F05 /* UAGithubIssuesJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubIssuesJSONParser.h; sourceTree = "<group>"; };
+		41628D2814B2572400869F05 /* UAGithubIssuesJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubIssuesJSONParser.m; sourceTree = "<group>"; };
+		41628D2914B2572400869F05 /* UAGithubIssueCommentsJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubIssueCommentsJSONParser.h; sourceTree = "<group>"; };
+		41628D2A14B2572400869F05 /* UAGithubIssueCommentsJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubIssueCommentsJSONParser.m; sourceTree = "<group>"; };
+		41628D3314B2574D00869F05 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		41628D3414B2574D00869F05 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		41628D3814B2578300869F05 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		41628D3914B2578300869F05 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		41628D3A14B2578300869F05 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		41628D3B14B2578300869F05 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		41628D3C14B2578300869F05 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		41628D3D14B2578300869F05 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		41628D3E14B2578300869F05 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		41628D3F14B2578300869F05 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		41628D4414B2579700869F05 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		41628D4514B2579700869F05 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		41628D4614B2579700869F05 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		41628D4714B2579700869F05 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		41628D4814B2579700869F05 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		41628D4914B2579700869F05 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		41628D4A14B2579700869F05 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		41628D4B14B2579700869F05 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		41628D4C14B2579700869F05 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		41628D4D14B2579700869F05 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		41628D5314B257DF00869F05 /* UAGithubURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubURLConnection.h; sourceTree = "<group>"; };
+		41628D5414B257DF00869F05 /* UAGithubEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubEngine.h; sourceTree = "<group>"; };
+		41628D5514B257DF00869F05 /* UAGithubEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubEngine.m; sourceTree = "<group>"; };
+		41628D5614B257DF00869F05 /* UAReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAReachability.h; sourceTree = "<group>"; };
+		41628D5714B257DF00869F05 /* UAReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAReachability.m; sourceTree = "<group>"; };
+		41628D5814B257DF00869F05 /* UAGithubEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubEngineDelegate.h; sourceTree = "<group>"; };
+		41628D5914B257DF00869F05 /* UAGithubEngineRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubEngineRequestTypes.h; sourceTree = "<group>"; };
+		41628D5A14B257DF00869F05 /* UAGithubParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubParserDelegate.h; sourceTree = "<group>"; };
+		41628D5B14B257DF00869F05 /* UAGithubURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubURLConnection.m; sourceTree = "<group>"; };
+		41628D5C14B257DF00869F05 /* UAGithubEngineConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubEngineConstants.h; sourceTree = "<group>"; };
+		41628D5D14B257DF00869F05 /* UAGithubEngineConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubEngineConstants.m; sourceTree = "<group>"; };
+		41628D5E14B257DF00869F05 /* UAGithubOrganizationsJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAGithubOrganizationsJSONParser.h; sourceTree = "<group>"; };
+		41628D5F14B257DF00869F05 /* UAGithubOrganizationsJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAGithubOrganizationsJSONParser.m; sourceTree = "<group>"; };
+		41891A5614B289BA00F6FFDF /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		41891A5714B289BA00F6FFDF /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		41CAF24014B8BDC7002DB9AA /* BranchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchListViewController.h; sourceTree = "<group>"; };
+		41CAF24114B8BDC7002DB9AA /* BranchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchListViewController.m; sourceTree = "<group>"; };
+		41CAF24314B91631002DB9AA /* CommitListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitListViewController.h; sourceTree = "<group>"; };
+		41CAF24414B91631002DB9AA /* CommitListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitListViewController.m; sourceTree = "<group>"; };
+		41CAF24A14BA1FEF002DB9AA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		41CAF24C14BA3506002DB9AA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		41CAF25014BA3962002DB9AA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		41CAF25414BA3EB7002DB9AA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41628CDB14B253DA00869F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41628CE314B253DA00869F05 /* UIKit.framework in Frameworks */,
+				41628CE514B253DA00869F05 /* Foundation.framework in Frameworks */,
+				41628CE714B253DA00869F05 /* CoreGraphics.framework in Frameworks */,
+				41CAF24B14BA1FEF002DB9AA /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41628CD314B253DA00869F05 = {
+			isa = PBXGroup;
+			children = (
+				41CAF25414BA3EB7002DB9AA /* Default@2x.png */,
+				41CAF25014BA3962002DB9AA /* icon.png */,
+				41CAF24C14BA3506002DB9AA /* Default.png */,
+				41628CE814B253DA00869F05 /* GitHubMobile */,
+				41628CE114B253DA00869F05 /* Frameworks */,
+				41628CDF14B253DA00869F05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41628CDF14B253DA00869F05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41628CDE14B253DA00869F05 /* GitHubMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41628CE114B253DA00869F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41CAF24A14BA1FEF002DB9AA /* SystemConfiguration.framework */,
+				41628CE214B253DA00869F05 /* UIKit.framework */,
+				41628CE414B253DA00869F05 /* Foundation.framework */,
+				41628CE614B253DA00869F05 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41628CE814B253DA00869F05 /* GitHubMobile */ = {
+			isa = PBXGroup;
+			children = (
+				41628D0214B255D900869F05 /* Engine */,
+				41628CF114B253DA00869F05 /* AppDelegate.h */,
+				41628CF214B253DA00869F05 /* AppDelegate.m */,
+				41628CF414B253DA00869F05 /* MainStoryboard.storyboard */,
+				41CAF24314B91631002DB9AA /* CommitListViewController.h */,
+				41CAF24414B91631002DB9AA /* CommitListViewController.m */,
+				41CAF24014B8BDC7002DB9AA /* BranchListViewController.h */,
+				41CAF24114B8BDC7002DB9AA /* BranchListViewController.m */,
+				4106F56514B57FB1005BCD3F /* FollowersListViewController.h */,
+				4106F56614B57FB1005BCD3F /* FollowersListViewController.m */,
+				4106F56214B57995005BCD3F /* FollowingListViewController.h */,
+				4106F56314B57995005BCD3F /* FollowingListViewController.m */,
+				413B970614B2D3F4005CFEAA /* LoginViewController.h */,
+				413B970714B2D3F4005CFEAA /* LoginViewController.m */,
+				41891A5614B289BA00F6FFDF /* ProfileViewController.h */,
+				41891A5714B289BA00F6FFDF /* ProfileViewController.m */,
+				41628CFF14B2551100869F05 /* RepoListViewController.h */,
+				41628D0014B2551100869F05 /* RepoListViewController.m */,
+				413B972D14B56172005CFEAA /* UserSummaryViewController.h */,
+				413B972E14B56173005CFEAA /* UserSummaryViewController.m */,
+				41628CE914B253DA00869F05 /* Supporting Files */,
+			);
+			path = GitHubMobile;
+			sourceTree = "<group>";
+		};
+		41628CE914B253DA00869F05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41628CEA14B253DA00869F05 /* GitHubMobile-Info.plist */,
+				41628CEB14B253DA00869F05 /* InfoPlist.strings */,
+				41628CEE14B253DA00869F05 /* main.m */,
+				41628CF014B253DA00869F05 /* GitHubMobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41628D0214B255D900869F05 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				41628D5314B257DF00869F05 /* UAGithubURLConnection.h */,
+				41628D5414B257DF00869F05 /* UAGithubEngine.h */,
+				41628D5514B257DF00869F05 /* UAGithubEngine.m */,
+				41628D5614B257DF00869F05 /* UAReachability.h */,
+				41628D5714B257DF00869F05 /* UAReachability.m */,
+				41628D5814B257DF00869F05 /* UAGithubEngineDelegate.h */,
+				41628D5914B257DF00869F05 /* UAGithubEngineRequestTypes.h */,
+				41628D5A14B257DF00869F05 /* UAGithubParserDelegate.h */,
+				41628D5B14B257DF00869F05 /* UAGithubURLConnection.m */,
+				41628D5C14B257DF00869F05 /* UAGithubEngineConstants.h */,
+				41628D5D14B257DF00869F05 /* UAGithubEngineConstants.m */,
+				41628D5E14B257DF00869F05 /* UAGithubOrganizationsJSONParser.h */,
+				41628D5F14B257DF00869F05 /* UAGithubOrganizationsJSONParser.m */,
+				41628D1014B256D500869F05 /* JSON Parsers */,
+				41628D0F14B256C200869F05 /* Categories */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		41628D0F14B256C200869F05 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				41628D1114B2570200869F05 /* NSData+Base64.h */,
+				41628D1214B2570200869F05 /* NSData+Base64.m */,
+				41628D1314B2570200869F05 /* NSString+UAGithubEngineUtilities.h */,
+				41628D1414B2570200869F05 /* NSString+UAGithubEngineUtilities.m */,
+				41628D1514B2570200869F05 /* NSString+UUID.h */,
+				41628D1614B2570200869F05 /* NSString+UUID.m */,
+				41628D1714B2570200869F05 /* NSArray+Utilities.h */,
+				41628D1814B2570200869F05 /* NSArray+Utilities.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		41628D1014B256D500869F05 /* JSON Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				41628D3214B2573400869F05 /* TouchJSON */,
+				41628D1D14B2572400869F05 /* UAGithubJSONParser.h */,
+				41628D1E14B2572400869F05 /* UAGithubJSONParser.m */,
+				41628D1F14B2572400869F05 /* UAGithubSimpleJSONParser.h */,
+				41628D2014B2572400869F05 /* UAGithubSimpleJSONParser.m */,
+				41628D2114B2572400869F05 /* UAGithubUsersJSONParser.h */,
+				41628D2214B2572400869F05 /* UAGithubUsersJSONParser.m */,
+				41628D2314B2572400869F05 /* UAGithubRepositoriesJSONParser.h */,
+				41628D2414B2572400869F05 /* UAGithubRepositoriesJSONParser.m */,
+				41628D2514B2572400869F05 /* UAGithubCommitsJSONParser.h */,
+				41628D2614B2572400869F05 /* UAGithubCommitsJSONParser.m */,
+				41628D2714B2572400869F05 /* UAGithubIssuesJSONParser.h */,
+				41628D2814B2572400869F05 /* UAGithubIssuesJSONParser.m */,
+				41628D2914B2572400869F05 /* UAGithubIssueCommentsJSONParser.h */,
+				41628D2A14B2572400869F05 /* UAGithubIssueCommentsJSONParser.m */,
+			);
+			name = "JSON Parsers";
+			sourceTree = "<group>";
+		};
+		41628D3214B2573400869F05 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				41628D3714B2576D00869F05 /* JSON */,
+				41628D3614B2575400869F05 /* Extensions */,
+				41628D3314B2574D00869F05 /* CDataScanner.h */,
+				41628D3414B2574D00869F05 /* CDataScanner.m */,
+			);
+			name = TouchJSON;
+			sourceTree = "<group>";
+		};
+		41628D3614B2575400869F05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41628D3814B2578300869F05 /* CDataScanner_Extensions.h */,
+				41628D3914B2578300869F05 /* CDataScanner_Extensions.m */,
+				41628D3A14B2578300869F05 /* NSCharacterSet_Extensions.h */,
+				41628D3B14B2578300869F05 /* NSCharacterSet_Extensions.m */,
+				41628D3C14B2578300869F05 /* NSDictionary_JSONExtensions.h */,
+				41628D3D14B2578300869F05 /* NSDictionary_JSONExtensions.m */,
+				41628D3E14B2578300869F05 /* NSScanner_Extensions.h */,
+				41628D3F14B2578300869F05 /* NSScanner_Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		41628D3714B2576D00869F05 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				41628D4414B2579700869F05 /* CJSONDataSerializer.h */,
+				41628D4514B2579700869F05 /* CJSONDataSerializer.m */,
+				41628D4614B2579700869F05 /* CJSONDeserializer.h */,
+				41628D4714B2579700869F05 /* CJSONDeserializer.m */,
+				41628D4814B2579700869F05 /* CJSONScanner.h */,
+				41628D4914B2579700869F05 /* CJSONScanner.m */,
+				41628D4A14B2579700869F05 /* CJSONSerializer.h */,
+				41628D4B14B2579700869F05 /* CJSONSerializer.m */,
+				41628D4C14B2579700869F05 /* CSerializedJSONData.h */,
+				41628D4D14B2579700869F05 /* CSerializedJSONData.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41628CDD14B253DA00869F05 /* GitHubMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41628CFC14B253DA00869F05 /* Build configuration list for PBXNativeTarget "GitHubMobile" */;
+			buildPhases = (
+				41628CDA14B253DA00869F05 /* Sources */,
+				41628CDB14B253DA00869F05 /* Frameworks */,
+				41628CDC14B253DA00869F05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubMobile;
+			productName = GitHubMobile;
+			productReference = 41628CDE14B253DA00869F05 /* GitHubMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41628CD514B253DA00869F05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = BoYu;
+			};
+			buildConfigurationList = 41628CD814B253DA00869F05 /* Build configuration list for PBXProject "GitHubMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 41628CD314B253DA00869F05;
+			productRefGroup = 41628CDF14B253DA00869F05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41628CDD14B253DA00869F05 /* GitHubMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41628CDC14B253DA00869F05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41628CED14B253DA00869F05 /* InfoPlist.strings in Resources */,
+				41628CF614B253DA00869F05 /* MainStoryboard.storyboard in Resources */,
+				41CAF25214BA3A1C002DB9AA /* Default.png in Resources */,
+				41CAF25514BA3EB7002DB9AA /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41628CDA14B253DA00869F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41628CEF14B253DA00869F05 /* main.m in Sources */,
+				41628CF314B253DA00869F05 /* AppDelegate.m in Sources */,
+				41628D0114B2551100869F05 /* RepoListViewController.m in Sources */,
+				41628D1914B2570200869F05 /* NSData+Base64.m in Sources */,
+				41628D1A14B2570200869F05 /* NSString+UAGithubEngineUtilities.m in Sources */,
+				41628D1B14B2570200869F05 /* NSString+UUID.m in Sources */,
+				41628D1C14B2570200869F05 /* NSArray+Utilities.m in Sources */,
+				41628D2B14B2572400869F05 /* UAGithubJSONParser.m in Sources */,
+				41628D2C14B2572400869F05 /* UAGithubSimpleJSONParser.m in Sources */,
+				41628D2D14B2572400869F05 /* UAGithubUsersJSONParser.m in Sources */,
+				41628D2E14B2572400869F05 /* UAGithubRepositoriesJSONParser.m in Sources */,
+				41628D2F14B2572400869F05 /* UAGithubCommitsJSONParser.m in Sources */,
+				41628D3014B2572400869F05 /* UAGithubIssuesJSONParser.m in Sources */,
+				41628D3114B2572400869F05 /* UAGithubIssueCommentsJSONParser.m in Sources */,
+				41628D3514B2574D00869F05 /* CDataScanner.m in Sources */,
+				41628D4014B2578300869F05 /* CDataScanner_Extensions.m in Sources */,
+				41628D4114B2578300869F05 /* NSCharacterSet_Extensions.m in Sources */,
+				41628D4214B2578300869F05 /* NSDictionary_JSONExtensions.m in Sources */,
+				41628D4314B2578300869F05 /* NSScanner_Extensions.m in Sources */,
+				41628D4E14B2579700869F05 /* CJSONDataSerializer.m in Sources */,
+				41628D4F14B2579700869F05 /* CJSONDeserializer.m in Sources */,
+				41628D5014B2579700869F05 /* CJSONScanner.m in Sources */,
+				41628D5114B2579700869F05 /* CJSONSerializer.m in Sources */,
+				41628D5214B2579700869F05 /* CSerializedJSONData.m in Sources */,
+				41628D6014B257DF00869F05 /* UAGithubEngine.m in Sources */,
+				41628D6114B257DF00869F05 /* UAReachability.m in Sources */,
+				41628D6214B257DF00869F05 /* UAGithubURLConnection.m in Sources */,
+				41628D6314B257DF00869F05 /* UAGithubEngineConstants.m in Sources */,
+				41628D6414B257DF00869F05 /* UAGithubOrganizationsJSONParser.m in Sources */,
+				41891A5814B289BA00F6FFDF /* ProfileViewController.m in Sources */,
+				413B970814B2D3F4005CFEAA /* LoginViewController.m in Sources */,
+				413B972F14B56173005CFEAA /* UserSummaryViewController.m in Sources */,
+				4106F56414B57995005BCD3F /* FollowingListViewController.m in Sources */,
+				4106F56714B57FB1005BCD3F /* FollowersListViewController.m in Sources */,
+				41CAF24214B8BDC7002DB9AA /* BranchListViewController.m in Sources */,
+				41CAF24514B91631002DB9AA /* CommitListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41628CEB14B253DA00869F05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41628CEC14B253DA00869F05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		41628CF414B253DA00869F05 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41628CF514B253DA00869F05 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41628CFA14B253DA00869F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos5.0;
+			};
+			name = Debug;
+		};
+		41628CFB14B253DA00869F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41628CFD14B253DA00869F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHubMobile/GitHubMobile-Prefix.pch";
+				INFOPLIST_FILE = "GitHubMobile/GitHubMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		41628CFE14B253DA00869F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHubMobile/GitHubMobile-Prefix.pch";
+				INFOPLIST_FILE = "GitHubMobile/GitHubMobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41628CD814B253DA00869F05 /* Build configuration list for PBXProject "GitHubMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41628CFA14B253DA00869F05 /* Debug */,
+				41628CFB14B253DA00869F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41628CFC14B253DA00869F05 /* Build configuration list for PBXNativeTarget "GitHubMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41628CFD14B253DA00869F05 /* Debug */,
+				41628CFE14B253DA00869F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41628CD514B253DA00869F05 /* Project object */;
+}
